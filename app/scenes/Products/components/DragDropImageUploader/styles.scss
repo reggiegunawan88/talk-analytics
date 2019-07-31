@@ -1,0 +1,46 @@
+@import '../../../../../assets/scss/global';
+
+$header-color: #e7e8ea;
+$red-color: #eb1114;
+
+.outer-container {
+  width: 100%;
+  border: 1px solid $header-color;
+}
+
+.header {
+  background: $header-color;
+  height: 35px;
+}
+
+.dropzone {
+  width: 100%;
+  height: 150px;
+  padding: 50px;
+  text-align: center;
+}
+
+.click-here {
+  color: $accent-green !important;
+  cursor: pointer;
+}
+
+.accent-color {
+  color: $accent-green;
+}
+
+.dropzone-text {
+  font-size: 16px;
+  color: #000;
+}
+
+.red-color {
+  color: $red-color;
+}
+
+.display_file_name {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -1,0 +1,25 @@
+.register {
+  &__inner-container {
+    width: 40%;
+    padding: 40px 0;
+    min-width: 500px;
+    margin: auto;
+  }
+
+  &__title {
+    padding-top: 15%;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+}
+
+$break-small: 520px;
+@media screen and (max-width: $break-small) {
+  .register {
+    &__inner-container {
+      width: 100%;
+      padding: 20px;
+      min-width: 0px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.react_select {
+  &__outer_container {
+    overflow: initial !important;
+  }
+}
+
+.size-sm {
+  width: 150px;
+  margin: 0 40px 0 5px;
+}
+
+.input--required {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.border--required {
+  border-color: #f55753 !important;
+}

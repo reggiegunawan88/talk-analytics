@@ -1,0 +1,58 @@
+.label {
+  &__status {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &__status:before {
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+  }
+  &__status-processing {
+    color: #48b0f7;
+  }
+  &__status-processing:before {
+    content: '\f017';
+  }
+  &__status-completed {
+    color: #10cfbd;
+    text-transform: capitalize;
+  }
+  &__status-completed:before {
+    content: '\f087';
+  }
+  &__status-canceled {
+    color: #f55753;
+  }
+  &__status-canceled:before {
+    content: '\f088';
+  }
+}
+
+.row {
+  &__active td {
+    background: #daeffd !important;
+  }
+}
+.table {
+  &__th {
+    &--no {
+      width: 8%;
+    }
+  }
+  &__tr {
+    cursor: pointer;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.status_icon {
+  width: 20px;
+  margin-right: 5px;
+}

@@ -1,0 +1,26 @@
+.adjusted-height {
+  height: calc(100% - 40px) !important;
+}
+
+.adjusted-margin-top {
+  margin-top: -30px;
+}
+
+.hidden {
+  display: block;
+}
+
+.chat-loading {
+  width: calc(100% - 30%);
+  float: left;
+}
+
+@media (max-width: 991px) {
+  .adjusted-margin-top {
+    margin-top: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,104 @@
+.user {
+  &__img-left {
+    display: block;
+    float: left;
+    margin-top: 15px;
+  }
+
+  &__img-outer-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+  }
+
+  &__img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+  }
+
+  &__img-floating-icon {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: -1px 2px 3px #dcdcdc;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__info {
+    &-right {
+      display: block;
+      padding-left: 165px;
+    }
+
+    &-data > div > p {
+      word-break: break-all;
+    }
+  }
+}
+
+.user-card--modal {
+  width: 500px;
+  padding: 30px;
+}
+
+@media (max-width: 991px) {
+  .user {
+    &__img-left {
+      display: block;
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__info {
+      &-right {
+        display: block;
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .user {
+    &__img-outer-container {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__img-outer-container > div {
+      font-size: 50px;
+    }
+
+    &__img-container {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .user-card--modal {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .user-card--modal {
+    width: 200px;
+    padding: 20px;
+  }
+}

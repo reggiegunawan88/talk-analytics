@@ -1,0 +1,37 @@
+/*--------------------
+Mixins
+--------------------*/
+:root {
+    --talk-chat-background: transparent;
+    --talk-chat-border-background: #fff;
+  
+    --talk-bg-color: transparent;
+        
+    --talk-btn-color: #FF5722;
+    --talk-btn-hover-color: #FF5722;
+    --talk-btn-font-color: white;
+  
+    --talk-bubble-color: gold;
+    --talk-bubble-personal-color: #ffffff;
+  
+    --talk-font-color: black;
+    --talk-secondary-font-color: black;
+    
+    --talk-usertag-background: #e2dcdc;
+    --talk-usertag-font: #ff5722;
+
+    --talk-minimize-button: gold;
+  }
+
+  .chat-animated{
+    overflow-y: auto
+  }
+
+  .mCSB_inside > .mCSB_container {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+  }
+
+  .chat-title{
+    display:none;
+  }

@@ -1,0 +1,63 @@
+$accent-color: #6aa6a1;
+
+.content-wrapper {
+  padding: 50px 100px !important;
+  flex: 1;
+}
+
+.content-wrapper:last-child {
+  display: flex;
+  align-items: center;
+  border-left: 2px dashed #ccc;
+}
+
+.tableScroll {
+  overflow-y: scroll;
+  height: 100px;
+  display: block;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+
+.download-icon {
+  color: $accent-color;
+}
+
+.csv-icon {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.btn_icon {
+  margin-right: 5px;
+}
+
+.c-modal__normal {
+  width: 500px;
+  padding: 30px;
+}
+
+.productsScroll {
+  display: block;
+  width: 100%;
+  margin-top: 55px;
+}
+
+.productsScroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.productsScroll::-webkit-scrollbar-track {
+  background: #ddd;
+  opacity: 0.5;
+}
+
+.productsScroll::-webkit-scrollbar-thumb {
+  background: #2f3137;
+}
+
+.productsScroll::-webkit-scrollbar-thumb:hover {
+  background: #2f3137;
+}

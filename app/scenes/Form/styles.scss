@@ -1,0 +1,53 @@
+.c-page__title {
+  margin: 0 0 20px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.form {
+  &__type-single {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
+
+  &__type-nodata {
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__type-single table {
+    margin-bottom: 0;
+  }
+
+  &__type-single h3 {
+    margin: 0 15px 5px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  &__type-pagination {
+    display: table;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+  }
+
+  &__type-pagination > div > div {
+    padding: 0 20px !important;
+  }
+}
+
+.w-40px {
+  width: 40px;
+}

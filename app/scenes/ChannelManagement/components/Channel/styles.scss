@@ -1,0 +1,112 @@
+.bot {
+  &__img-outer-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+
+  &__img-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+  }
+
+  &__img-floating-icon {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: -1px 2px 3px #dcdcdc;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  &__img-area {
+    float: left;
+    margin-right: 25px;
+  }
+
+  &__info-data {    
+    padding-left: 180px;
+  }
+
+  &__info-id {
+    font-size: 10px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    text-transform: lowercase;
+    text-align: left;
+    position: relative;
+  }
+
+  &__info-id input{
+    font-size: 10px;
+    text-transform: lowercase;
+    text-align: left;
+    padding: 0px;
+    background: transparent;
+    height: auto;
+    line-height: 12px;
+    box-shadow: none !important;
+    pointer-events: none !important;
+    border: 0px !important;
+    width: 140px;
+  }
+
+  &__info-id i{
+    margin-left: 3px;
+    font-size: 10px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  &__info-id .copy__alert{
+    line-height: 15px;
+    position: absolute;
+    top: 20px;
+    display: block;
+    padding: 0px 5px;
+    background-color: #daeffd;
+    color: #2b6a94;
+    border: 1px solid #cde5f6;
+    text-transform: none;
+  }
+}
+
+.bot-overview--modal {
+  width: 500px;
+  max-width: 100%;
+  padding: 30px;
+}
+
+@media (max-width: 767px) {
+  .bot {
+    &__img-area {
+      display: block;
+      float: none;
+    }
+
+    &__info-data {
+      display: block;
+      padding-left: 0;
+    }
+  }
+
+  .panel--responsive {
+    padding: 0 !important;
+  }
+}

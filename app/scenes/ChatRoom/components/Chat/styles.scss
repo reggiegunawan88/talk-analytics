@@ -1,0 +1,122 @@
+.chat {
+  position: relative;
+  padding: 15px 10px 5px;
+  border-bottom: 1px solid #e6e6e6;
+
+  &--active {
+    background-color: #b0dfff;
+  }
+
+  &__time {
+    float: right;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  &__notif-bubble,
+  &__read-bubble {
+    position: absolute;
+    top: 38px;
+    right: 10px;
+    padding: 6px;
+    color: #fff;
+    content: "";
+    background-color: #7158b4;
+    border-radius: 50%;
+  }
+
+  &__read-bubble {
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    margin: auto 0;
+    background-color: #e4e4e4;
+  }
+
+  &__read-bubble i {
+    position: absolute;
+    right: -5px;
+    bottom: 100%;
+    z-index: 111;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 14px;
+    color: #fff;
+    visibility: hidden;
+    background: #7158b4f5;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  &__read-bubble:hover i {
+    margin-bottom: 5px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__read-bubble i::before {
+    position: absolute;
+    top: 100%;
+    right: 8px;
+    display: block;
+    content: "";
+    border: 3px solid #7158b4f5;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  &__disabled-bubble {
+    pointer-events: none;
+  }
+
+  &__click-area {
+    display: block;
+  }
+
+  &__details {
+    display: inline-block;
+    width: calc(100% - 52px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__details i {
+    margin-left: 5px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    color: #7158b4;
+  }
+
+  .profile-image {
+    margin-top: 5px;
+    color: white;
+    background-color: #7158b4;
+  }
+
+  .last-message {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.platform-icon {
+  float: left;
+  width: 20px;
+  margin-top: 10px;
+
+  img {
+    width: 80%;
+  }
+}

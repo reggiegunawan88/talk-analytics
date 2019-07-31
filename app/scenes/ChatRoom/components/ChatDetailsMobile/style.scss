@@ -1,0 +1,34 @@
+.adjusted-navbar{
+    display: flex !important;
+    margin: 25px 0px 15px 35px !important;
+}
+
+.adjusted-heading{
+    min-width: calc(100% - 170px);
+}
+
+.adjusted-button-bot{
+    padding: 10px 10px 0px 0px;
+    text-transform: uppercase;
+    color: black !important;
+    font-size: 12px !important;
+}
+
+.adjusted-inner-chat{
+    background-color: #f0f0f0;
+    // min-height: 417px !important;
+    height: 417px !important;
+}
+
+.adjusted-from-them{
+    background-color: white !important;
+    border-radius: 7px 7px 7px 0px !important;
+    padding: 15px !important;
+}
+
+.adjusted-from-me{
+    background-color: #192458 !important;
+    color: white !important;   
+    border-radius: 7px 7px 0px !important;
+    padding: 15px !important;
+}

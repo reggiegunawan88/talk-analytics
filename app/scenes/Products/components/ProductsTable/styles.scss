@@ -1,0 +1,70 @@
+.table {
+  overflow-x: unset !important;
+  display: table;
+  width: 100%;
+
+  table > tbody > tr > td {
+    padding: 20px 8px;
+  }
+
+  table > tbody > tr > td {
+    padding: 20px 8px;
+  }
+
+  table > tbody > tr.row {
+    &__active > td {
+      background: #daeffd !important;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  img {
+    width: 70px;
+  }
+
+  &__active td {
+    background: #000;
+  }
+
+  &__dropdown {
+    left: -70px !important;
+    top: 25px !important;
+
+    a:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__dropdown:before {
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+  }
+
+  &__dropdown:after {
+    position: absolute;
+    top: -6px;
+    right: 16px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    content: '';
+  }
+
+  &__menu {
+    cursor: pointer;
+    padding: 20px !important;
+  }
+}

@@ -1,0 +1,34 @@
+.btn__add {
+  float: right;
+}
+
+.bank-card {
+  &--modal {
+    width: 500px;
+    max-width: 100%;
+    padding: 30px;
+  }
+}
+
+.bank-table__container {
+  overflow-x: auto;
+}
+
+.panel--responsive {
+  padding: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .panel--responsive {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .btn__add {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+}

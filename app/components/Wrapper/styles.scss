@@ -1,0 +1,15 @@
+#root,
+.height-100 {
+  height: 100%;
+}
+
+.mobile {
+  padding: 20px;
+  text-align: center;
+  margin-top: 25vh;
+
+  &__logo {
+    margin: 30px auto;
+    display: block;
+  }
+}

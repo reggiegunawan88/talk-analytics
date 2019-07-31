@@ -1,0 +1,25 @@
+.pagination{
+  display: inline-flex;
+}
+
+.title{
+  font-family: 'Montserrat';
+}
+
+.adjusted_sub_header{
+	float: right;
+	display: flex;
+}
+
+.adjusted_filter_label{
+  margin: 7px 10px 0px 0px;
+}
+
+.header__filter > div > label{
+	float: left;
+	margin-top: 7px;
+}
+
+.header__filter > div > label + div{
+	margin-left: 75px;
+}

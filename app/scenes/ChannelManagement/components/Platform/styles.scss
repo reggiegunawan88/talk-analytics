@@ -1,0 +1,85 @@
+.platform-modal {
+  width: 500px;
+  padding: 30px;
+}
+
+.w {
+  &-100px {
+    width: 100px;
+  }
+}
+
+.textarea-custom label i {
+  font-size: 8px;
+}
+
+.web-script {
+  position: relative;
+  display: block;
+  margin-top: 15px;
+
+  label {
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  textarea {
+    display: block;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+  }
+
+  i {
+    position: absolute;
+    top: 33px;
+    right: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: #6d5cae;
+    box-shadow: 0 1px 2px #a5a3a3;
+  }
+
+  pre {
+    display: block;
+  }
+
+  .copy__alert {
+    display: block;
+    padding: 5px;
+    line-height: 15px;
+    color: #2b6a94;
+    text-transform: none;
+    background-color: #daeffd;
+    border: 1px solid #cde5f6;
+    border-radius: 5px;
+  }
+}
+
+.form-group--disabled > label{
+  color: #626262;
+}
+
+.form-group--disabled > div > input {
+  color: #575757 !important;
+}
+
+@media (max-width: 767px) {
+  .platform-modal {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .table__platform tr td {
+    padding: 10px !important;
+  }
+}

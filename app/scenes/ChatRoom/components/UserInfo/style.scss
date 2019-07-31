@@ -1,0 +1,137 @@
+.user-info-wrapper {
+  float: left;
+  width: calc(100% - (57% + 360px));
+  padding: 20px;
+  font-size: 14px;
+  color: black;
+  background: white;
+
+  .title-wrapper {
+    .title {
+      display: inline-block;
+      margin: 0 0 10px;
+      font-size: 14pt;
+      font-weight: bold;
+    }
+
+    .caret {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  .user-name-wrapper {
+    .online-indicator {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      background-color: lightgreen;
+      border: 1px solid white;
+      border-radius: 100%;
+    }
+
+    .user-name {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+
+  .user-data-list {
+    padding: 0;
+    margin: 15px 0 0;
+    font-size: 13px;
+    list-style: none;
+
+    .user-data-list-item {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 4px;
+      line-height: 20px;
+
+      .user-data-label {
+        display: block;
+        color: grey;
+      }
+
+      .user-data {
+        display: block;
+        color: black;
+      }
+
+      .user-data-form-group {
+        min-width: 150px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+      }
+
+      .user-data-form-group label {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.adjusted-height {
+  width: 20%;
+  height: 100% !important;
+}
+
+.btn--disabled {
+  pointer-events: none !important;
+  background-color: #6d5cae;
+  border-color: #6d5cae;
+  opacity: 0.65;
+}
+
+.chat {
+  &__order-disabled {
+    position: relative;
+  }
+
+  &__order-disabled i {
+    position: absolute;
+    bottom: 100%;
+    z-index: 111;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 14px;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    background: #2f3137;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  &__order-disabled:hover i {
+    margin-bottom: 5px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__order-disabled i::before {
+    position: absolute;
+    top: 100%;
+    right: 8px;
+    display: block;
+    content: "";
+    border: 3px solid #2f3137;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1349px) {
+  .user-info-wrapper {
+    display: none;
+  }
+}
+

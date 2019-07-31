@@ -1,0 +1,313 @@
+.c-google-login {
+  &--icon {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+}
+
+.welcome {
+  &__bob {
+    position: relative;
+    height: 240px;
+    margin-right: -70px;
+    margin-left: -50px;
+  }
+
+  &__bob-bubble {
+    position: absolute;
+    top: -10px;
+    right: 80px;
+  }
+
+  &__bob-bubble > img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+  }
+
+  &__bob-bubble p {
+    position: absolute;
+    top: 77px;
+    right: 63px;
+    left: 11px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+
+  &__bob-bubble &__bob-talkabot {
+    position: absolute;
+    top: 105px;
+    right: 51px;
+    left: 0;
+    width: 135px;
+    margin: auto;
+  }
+
+  &__bob-bubble &__bob-talkabot img {
+    width: 100%;
+  }
+
+  &__bob > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 100%;
+    margin-right: -65px;
+  }
+}
+
+.login {
+  &__text {
+    margin-bottom: 0;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #1f1f1f;
+    text-align: center;
+  }
+
+  &__chat-info {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    left: 0;
+    display: block;
+    width: 238px;
+    padding-left: 25px;
+    margin: auto;
+    font-family: Poppins;
+    color: #1f1f1f;
+    text-align: center;
+
+  }
+
+  &__chat-info i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &__chat-info p {
+    display: block;
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    &__bob {
+      margin-right: -35px;
+
+      img {
+        margin-right: -75px;
+      }
+    }
+
+    &__bob-bubble {
+      right: 0;
+      left: 53px;
+    }
+  }
+
+  .login__chat-info {
+    right: 95px;
+    bottom: 35px;
+    left: unset;
+    width: 250px;
+    padding-right: 20px;
+    padding-left: 0;
+
+    i {
+      right: 0;
+      left: unset;
+    }
+
+    i::before {
+      content: "\f101";
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome {
+    &__bob {
+      height: 220px;
+    }
+
+    &__bob > img {
+      margin-right: -65px;
+    }
+
+    &__bob-bubble {
+      width: 250px;
+      right: 0;
+      left: 50px;
+      margin: auto;
+      top: 20px;
+    }
+
+    &__bob-bubble p {
+      top: 62px;
+      right: 55px;
+    }
+
+    &__bob-bubble &__bob-talkabot {
+      top: 82px;
+      right: 50px;
+      left: 0;
+      width: 124px;
+    }
+  }
+
+  .login__chat-info {
+    right: 70px;
+    width: 210px;
+    font-size: 11px;
+  }
+
+  .login__chat-info p {
+    font-size: 11px;
+  }
+}
+
+@media (min-height: 701px) {
+  .welcome {
+    &__bob {
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-height: 801px) {
+  .welcome {
+    &__bob {
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-height: 801px) and (max-width: 768px) and (min-width: 600px) {
+  .welcome {
+    &__bob {
+      height: 430px;
+      margin: 0;
+    }
+
+    &__bob > img {
+      margin-right: -150px;
+    }
+
+    &__bob-bubble {
+      right: 0px;
+      top: 60px;
+      left: 45px;
+      width: auto;
+    }
+
+    &__bob-bubble p {
+      top: 114px;
+      right: 85px;
+      font-size: 32px;
+    }
+
+    &__bob-bubble &__bob-talkabot {
+      top: 145px;
+      right: 77px;
+      width: 236px;
+    }
+  }
+
+  .login {
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text + button {
+      padding: 12px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &__text + button img {
+      width: 22px;
+    }
+
+    &__chat-info {
+      width: 335px;
+      padding-right: 25px;
+    }
+
+    &__chat-info i {
+      font-size: 24px;
+    }
+
+    &__chat-info p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-height: 1101px) and (max-width: 768px) and (min-width: 600px) {
+  .welcome {
+    &__bob {
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+@media (max-height: 480px) and (max-width: 768px) {
+  .welcome {
+    &__bob {
+      height: 175px;
+      margin-right: -10px;
+      margin-bottom: -30px;
+
+      img {
+        margin-right: -75px;
+      }
+    }
+
+    &__bob-bubble {
+      right: 0px;
+      left: 83px;
+    }
+  }
+}
+
+@media (max-height: 480px) and (max-width: 340px) {
+  .welcome {
+    &__bob-bubble {
+      right: 0px;
+      left: 78px;
+      width: 175px;
+    }
+  }
+}
+
+
+//iphone5
+@media (width: 320px) and (height: 568px){
+  .welcome {
+    &__bob-bubble {
+      right: 46px;
+      width: 245px;
+      top: 30px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.wide {
+  padding-left: 70px !important;
+}
+
+.lang {
+  padding: 12px 0;
+  margin-right: 10px;
+  font-size: 12px;
+  border-right: 2px solid #36393e;
+}
+
+.logo {
+  &__container {
+    float: left;
+    padding: 16px 22px;
+  }
+
+  &__active-channel {
+    display: none;
+  }
+}
+
+.channel__plan {
+  float: left;
+  padding: 4px 8px;
+  margin-top: 12px;
+  font-size: 17px;
+  color: #fff;
+  text-transform: capitalize;
+  border: 2px solid #626262;
+  border-radius: 5px;
+}
+
+.lang-opt {
+  &__outer-container {
+    position: relative;
+  }
+
+  &__container {
+    top: 0 !important;
+    right: 170px !important;
+    left: auto !important;
+
+    img {
+      height: 13px;
+      margin-top: -2px;
+      margin-right: 5px;
+      border: 1px solid #000;
+    }
+  }
+}
+
+.right-header {
+  &__container {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo {
+    &__container {
+      padding: 11px 15px 11px 5px;
+    }
+
+    &__active-channel {
+      display: block;
+      float: left;
+      padding: 3px 8px 3px 5px;
+      margin-top: 7px;
+      font-size: 15px;
+      line-height: 24px;
+      color: #ede9ff;
+      cursor: pointer;
+      background: #6d5eac;
+      border: 1px solid #f2f2f2;
+      border-radius: 40px;
+      box-shadow: 0 0 4px #6c658b;
+      animation: shake;
+      -webkit-animation-name: shake;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+
+    &__active-channel img {
+      display: block;
+      float: left;
+      width: 26px;
+      height: 26px;
+      margin: 0 5px 0 0;
+      background: #ddd;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .channel__plan {
+    display: none;
+  }
+
+  .right-header {
+    &__container {
+      margin-top: 4px;
+    }
+  }
+
+  .responsive {
+    &__container {
+      padding: 0 !important;
+    }
+
+    &__header {
+      z-index: 999 !important;
+    }
+  }
+}
+
+@keyframes shake {
+  0%,
+  20%,
+  100% {
+    margin-top: 7px;
+  }
+
+  10% {
+    margin-top: 10px;
+  }
+}

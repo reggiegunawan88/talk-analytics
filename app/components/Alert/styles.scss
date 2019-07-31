@@ -1,0 +1,25 @@
+.alert {
+  &-custom {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    left: 20px;
+    z-index: 111;
+    display: block;
+    padding: 0;
+    opacity: 1;
+    transition: all 0.4s;
+  }
+
+  &-custom p {
+    padding: 8px 10px;
+  }
+
+  &-show {
+    opacity: 1;
+  }
+
+  &-hide {
+    opacity: 0;
+  }
+}

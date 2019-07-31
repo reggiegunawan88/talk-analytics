@@ -1,0 +1,32 @@
+.textarea {
+  height: auto !important;
+}
+
+.input--required {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.border--required {
+  border-color: #f55753 !important;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+
+  label {
+    padding: 10px;
+    margin: 0;
+    line-height: 20px;
+    color: #555;
+    background: #ccc;
+    border-radius: 0;
+  }
+
+  input {
+    border-radius: 0 !important;
+  }
+}

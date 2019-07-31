@@ -1,0 +1,14 @@
+.notif_wrapper {
+  z-index: 699 !important;
+
+  &--wide {
+    left: 70px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .notif_wrapper {
+    top: 48px !important;
+    left: 0 !important;
+  }
+}

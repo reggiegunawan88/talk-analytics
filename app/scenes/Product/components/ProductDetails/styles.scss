@@ -1,0 +1,17 @@
+@import '../../../../../assets/scss/global';
+
+.body {
+  color: #98999b;
+}
+
+.always_ready {
+  background: #f0f0f0;
+  color: rgba(98, 98, 98, 0.47);
+  cursor: pointer;
+
+  &__active {
+    color: #fff !important;
+    background: $accent-green !important;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,522 @@
+.title-plan {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.shopping {
+  &--modal {
+    width: 400px !important;
+  }
+
+  &--outer-container {
+    width: 750px;
+    max-width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+  }
+
+  &--plans-container {
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 5px #ddd;
+  }
+
+  &--plans-option {
+    display: inline-block;
+    width: 25%;
+    padding: 25px 15px 15px;
+    color: #777;
+    background-color: #fff;
+
+    &:nth-child(odd) {
+      background-color: #f8f8f8;
+    }
+  }
+
+  &--features-container {
+    display: flex;
+  }
+
+  &--feature {
+    position: relative;
+    width: 100%;
+    padding: 25px 15px 65px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+
+    button {
+      position: absolute !important;
+      bottom: 15px;
+      width: calc(100% - 30px);
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &--container {
+    margin: -30px -30px -3px;
+    background: #f1f1f1;
+  }
+
+  &--upgrade {
+    width: 180px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  &--back {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: block;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #7f7f7f94;
+    cursor: pointer;
+  }
+
+  &--back:hover {
+    color: #6d5cae;
+  }
+
+  &--back i {
+    margin-right: 10px;
+  }
+
+  &__plans-container {
+    display: flex;
+    min-width: 750px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 5px #ddd;
+  }
+
+  &__plans-option {
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding: 25px 15px 15px;
+    color: #777;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    transition: all 0.4s;
+  }
+
+  &__plans-option + &__plans-option {
+    border-left: 1px solid #ececec;
+  }
+
+  &__plans-active {
+    padding-bottom: 25px;
+    margin-top: -10px;
+    background-color: #fff;
+  }
+
+  &__plans-option > p {
+    min-height: 50px;
+  }
+
+  &__features-container {
+    display: flex;
+  }
+
+  &__whatsapp-plans,
+  &__line-plans {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__whatsapp-icon,
+  &__line-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -65px;
+    display: block;
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin: auto;
+  }
+
+  &__whatsapp-icon img,
+  &__line-icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__whatsapp-price {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  &__whatsapp-single {
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding: 0 5px;
+  }
+
+  &__whatsapp-single p {
+    display: block;
+    padding: 15px 40px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px #383838;
+    background: #6d5cae;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #a4a4a4;
+  }
+
+  &__line-plans {
+    display: block;
+    padding: 0 5px;
+    margin-bottom: 40px;
+  }
+
+  &__line-icon {
+    left: -60px;
+    display: block;
+    width: 45px;
+    height: 45px;
+  }
+
+  &__line-text {
+    display: block;
+    padding: 20px 45px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #045d04;
+    background: #139a53;
+    border: 3px solid #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px #a4a4a4;
+  }
+
+  &__feature-info {
+    margin-top: 10px !important;
+  }
+
+  &__features-button {
+    display: table;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  &__features-button i {
+    margin-left: 10px;
+    font-size: 17px;
+    color: #c6c6c6;
+  }
+
+  &__features-button span {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+  }
+
+  &__plan-features {
+    padding: 35px 30px 30px;
+    margin-top: 25px;
+    background: #f8f8f8;
+    border-top: 4px solid #6d5cae;
+    box-shadow: 3px 4px 5px #ddd;
+    transition: all 0.4s;
+  }
+
+  &__plan-show {
+    display: block;
+  }
+
+  &__plan-hide {
+    display: none;
+  }
+
+  &__plan-features > div > div {
+    border-right: 1px solid #e7e7e7;
+  }
+
+  &__plan-features > div > div:last-child {
+    border-right: 0;
+  }
+
+  &__plan-features > div ul {
+    display: block;
+    padding: 0;
+  }
+
+  &__plan-features > div ul li {
+    display: table;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  &__plan-features > div ul li i {
+    display: block;
+    float: left;
+    padding-left: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #6d5cae;
+  }
+
+  &__plan-features > div ul li span {
+    display: block;
+    padding-left: 26px;
+  }
+
+  &__plans-listfeature {
+    display: block;
+  }
+
+  &__plans-listfeature ul {
+    display: block;
+    padding: 0;
+    text-align: left;
+  }
+
+  &__plans-listfeature ul li {
+    display: table;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  &__plans-listfeature ul li i {
+    display: block;
+    float: left;
+    padding-left: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #6d5cae;
+  }
+
+  &__plans-listfeature ul li span {
+    display: block;
+    padding-left: 26px;
+  }
+}
+
+.payment {
+  &__area {
+    position: relative;
+    display: block;
+    padding: 40px 50px 70px;
+    margin: 25px;
+    background: #fff;
+    border: 4px solid #6d5cae;
+    border-radius: 6px;
+    box-shadow: 0 0 4px #6d5cae;
+  }
+
+  &__info-title {
+    display: block;
+  }
+
+  &__info-title img {
+    display: block;
+    float: left;
+  }
+
+  &__info-title b {
+    display: block;
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__info-features p {
+    margin: 0;
+    font-weight: 600;
+    color: #2f3137;
+  }
+
+  &__info-features ul {
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    list-style: none;
+  }
+
+  &__info-features ul li {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-left: 25px;
+    margin: 0;
+    margin-bottom: 8px;
+    color: #2f3137;
+    text-transform: capitalize;
+  }
+
+  &__info-features ul li:nth-of-type(2n+1) {
+    clear: left;
+  }
+
+  &__info-features ul li i {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  &__plan-border {
+    border-right: 1px solid #e5e5e5;
+  }
+
+  &__billing-area {
+    padding: 25px 0 0 25px;
+  }
+
+  &__billing-area h6 {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6d5cae;
+    text-transform: uppercase;
+  }
+
+  &__billing-list {
+    padding: 25px;
+    margin-top: 15px;
+    background: #f1f1f1;
+  }
+
+  &__billing-list table,
+  &__modal-table table {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__billing-list table tr > *,
+  &__modal-table table tr > * {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  &__modal-table table tr > * {
+    font-weight: 500;
+    color: #000;
+  }
+
+  &__billing-list table tr:last-child > *,
+  &__modal-table table tr:last-child > * {
+    border-top: 1px solid #ddd;
+  }
+
+  &__modal-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+.invoice {
+  &__area {
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 35px 30px;
+    margin-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 1px 3px #ddd;
+  }
+
+  &__area-header {
+    display: table;
+    width: 100%;
+  }
+
+  &__area-header h2 {
+    float: right;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ababab;
+  }
+
+  &__area-header h2 span {
+    display: block;
+  }
+
+  &__area-header h2 span:last-child {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #202226;
+  }
+
+  &__customer-info {
+    display: block;
+    margin: 20px 0;
+    font-family: Poppins;
+  }
+
+  &__customer-info > label {
+    display: block;
+    margin-bottom: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  &__customer-info > span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  &__transfer-action {
+    margin-top: 15px;
+  }
+
+  &__transfer-info {
+    color: #000;
+  }
+
+  &__transfer-info p {
+    margin: 0;
+    font-weight: 500;
+  }
+}

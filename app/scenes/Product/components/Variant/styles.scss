@@ -1,0 +1,40 @@
+.variant {
+  text-align: right;
+  color: #f55753;
+  cursor: pointer;
+}
+
+.variant_table {
+  width: 100%;
+
+  td,
+  th {
+    padding: 5px;
+  }
+}
+
+.variant {
+  &__width35 {
+    width: 35%;
+  }
+
+  &__width30 {
+    width: 30%;
+  }
+}
+
+.tag_input {
+  display: flex !important;
+  flex-wrap: wrap;
+  max-width: 500px !important;
+}
+
+.c-modal__normal {
+  width: 500px;
+  padding: 30px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

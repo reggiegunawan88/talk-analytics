@@ -1,0 +1,35 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "env": {
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["react", "jsx-a11y", "import"],
+  "globals": {
+    "document": true,
+    "window": true,
+    "localStorage": true,
+    "FormData": true,
+    "Blob": true,
+    "FileReader": true,
+    "navigator": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/extensions": 0,
+    "class-methods-use-this": "off",
+    "react/no-array-index-key": "warn",
+    "array-callback-return": "warn",
+    "react/no-did-mount-set-state": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  }
+}

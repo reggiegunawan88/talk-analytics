@@ -1,0 +1,107 @@
+.tooltip {
+  position: relative;
+
+  i {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 3px;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    background: #a0a0a0;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  &:hover i {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__position-top i {
+    bottom: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__position-top:hover i {
+    margin-bottom: 8px;
+  }
+
+  &__position-bottom i {
+    top: 100%;
+    margin-top: 15px;
+  }
+
+  &__position-bottom:hover i {
+    margin-top: 8px;
+  }
+
+  &__position-left i {
+    right: 100%;
+    margin-right: 15px;
+  }
+
+  &__position-left:hover i {
+    margin-right: 8px;
+  }
+
+  &__position-right i {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+  &__position-right:hover i {
+    margin-left: 8px;
+  }
+
+  i::before {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    content: "";
+    border: 4px solid #a0a0a0;
+  }
+
+  &__position-top i::before {
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  &__position-bottom i::before {
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    margin: auto;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  &__position-left i::before {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    margin: auto;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  &__position-right i::before {
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    margin: auto;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}

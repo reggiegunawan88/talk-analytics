@@ -1,0 +1,29 @@
+.c-bot-management__tab > li:hover::after,
+ .c-bot-management__tab > li.active::after {
+  background-color: #6d5cae !important;
+}
+
+@media (max-width: 767px) {
+  .c-bot-management__tab {
+    margin-bottom: 25px;
+  }
+
+  .c-bot-management__tab > li::after {
+    height: 3px;
+    background-color: #ddd;
+  }
+
+  .c-bot-management__tab::after {
+    display: none;
+  }
+
+  .c-bot-management__tab > li {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+  .c-bot-management__tab > li a {
+    display: block;
+  }
+}

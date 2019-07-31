@@ -1,0 +1,44 @@
+.location-card--modal {
+  width: 500px;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.province-dropdown,
+.city-dropdown {
+  display: inline-block;
+  width: 50%;
+}
+
+.province-dropdown {
+  padding-right: 0.5%;
+}
+
+.city-dropdown {
+  padding-left: 0.5%;
+}
+
+.location__btn {
+  float: right;
+}
+
+.panel--responsive {
+  padding: 0 !important;
+}
+
+@media (max-width: 665px) {
+  .province-dropdown,
+  .city-dropdown {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 490px) {
+  .location__btn {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,42 @@
+.f-w-600 {
+  font-weight: 600 !important;
+}
+
+.text-disable {
+  color: #b9b9b9 !important;
+}
+
+.textarea-200 textarea {
+  height: 200px !important;
+}
+
+.textarea-200>div {
+  padding-top: 0px !important;
+}
+
+.no-border {
+  border: 0px !important;
+}
+
+.platform-radio {
+  display: block;
+}
+
+.platform-radio>div {
+  display: block;
+}
+
+.platform-radio>div>div {
+  float: left;
+  width: 190px;
+  margin-bottom: 16px;
+}
+
+.platform-radio>div>div:nth-of-type(2n+1) {
+  clear: left;
+}
+
+.c-modal__normal {
+  width: 500px;
+  padding: 30px;
+}

@@ -1,0 +1,54 @@
+@import '../../../../../assets/scss/global';
+
+.import {
+  &__download-title {
+    font-weight: 400;
+    margin: 40px 0 20px;
+  }
+
+  &__download-paragraph {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__download-link {
+    width: auto !important;
+    float: left;
+  }
+}
+
+.download-icon {
+  color: $accent-green;
+}
+
+.csv-icon {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.download__type {
+  &--variant,
+  &--no_variant {
+    width: 49%;
+    display: inline-block;
+
+    h5 {
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 13px;
+      color: #ccc;
+      font-style: italic;
+    }
+  }
+
+  &--no_variant {
+    padding-right: 17.5px;
+    border-right: 1px solid #f0f0f0;
+  }
+
+  &--variant {
+    padding-left: 17.5px;
+  }
+}
